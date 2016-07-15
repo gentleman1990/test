@@ -40,9 +40,9 @@ for i in listFile:
             spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
             for row in spamreader:
                 valueList.append(row[2])
-        fiveMinutesAgo.append((valueList[(len(valueList)-1)]))
-        tenMinutesAgo.append(valueList[(len(valueList)-2)])
-        fiveteenMinutesAgo.append(valueList[(len(valueList)-3)])
+        fiveMinutesAgo.append((valueList[(len(valueList)-2)]))
+        tenMinutesAgo.append(valueList[(len(valueList)-3)])
+        fiveteenMinutesAgo.append(valueList[(len(valueList)-4)])
         valueList = []
         print i
         continue
